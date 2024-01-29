@@ -10,7 +10,7 @@ function Brand({list}) {
                 <td> {elem.brand} </td>
                 
             </tr>
-            <Model  Modelis={elem.models}  />
+            <Model  Modelis={elem.models}/>
              
         </>
         )
