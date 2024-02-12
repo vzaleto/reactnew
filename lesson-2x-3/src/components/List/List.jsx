@@ -5,7 +5,7 @@ class List extends Component {
 
     componentDidMount() {
 
-        setInterval(() => {
+     const timeBreak =  setInterval(() => {
 
             let randomList = Math.floor(Math.random() * (this.state.list.length));
 
@@ -47,7 +47,11 @@ class List extends Component {
                                 borderWidth: '20px'
                             })
                         )
+                     clearInterval(timeBreak);   
+
                     }
+
+
                 }
             )
 
@@ -63,7 +67,7 @@ class List extends Component {
     }
     render() {
 
-        let { list = [], color, fontWeight, numTrack, borderWidth } = this.state;
+        let { list = [], color, fontWeight, borderWidth } = this.state;
 
         let understyle = {
             color: color,
